@@ -1,4 +1,4 @@
-from settings import backup_url, headers, path_subs, output_subs
+from settings import restore_url, headers, path_subs, output_subs
 from base_methods import send_data, open_backup
 
 
@@ -15,5 +15,5 @@ def prepare_json(sub):
 subs = open_backup(output_subs)
 for sub in subs:
     response = send_data(
-        backup_url + path_subs, headers, prepare_json(sub))
+        restore_url + path_subs, headers, prepare_json(sub))
     print(response)

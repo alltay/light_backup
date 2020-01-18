@@ -22,6 +22,7 @@ def send_data(url, headers, data):
         3. Return response text.
     """
     response = requests.post(url, headers=headers, json=data)
+    print(response.text)
     if response.status_code != 201:
         return 'error %s' % response.status_code
     else:
