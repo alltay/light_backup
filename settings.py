@@ -1,5 +1,5 @@
-backup_url = 'http://127.0.0.1:8000/'
-restore_url = 'http://127.0.0.1:8000/'
+backup_url = 'https://lighttracer.herokuapp.com/'
+restore_url = 'https://lighttracer.herokuapp.com/'
 
 path_users = 'api/users/'
 path_subs = 'api/subscriptions/'
@@ -7,5 +7,5 @@ path_subs = 'api/subscriptions/'
 output_users = 'users.json'
 output_subs = 'subs.json'
 
-token = '76be0f488538a881cbb689565cfba3968b9a2bbc'
+token = 'f417f58a50519cd47a3bd46734542d92751de16f'
 headers = {'Authorization': 'Token %s' % token}
